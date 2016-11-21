@@ -33,24 +33,23 @@
     Get the greatest freerides and best climbing spots right here!
     </p>
     <button type="button" id="button"> Get notified! </button>
-      <script type="text/javascript">
-      var button = document.getElementByID('button')
-
-      button.onclick = function(){
-        <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js"
-          data-dojo-config="usePlainJson: true, isDebug: false">
-        </script>
-        <script type="text/javascript">require(["mojo/signup-forms/Loader"],
-        function(L) {
-          L.start({
-              "baseUrl":"mc.us11.list-manage.com",
-              "uuid":"13cf9edc701d9fb607e73409b","lid":"01d7745445"
-                  })
-                })
-      </script>
-    }
-    </script>
   </div>
+  <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js"
+    data-dojo-config="usePlainJson: true, isDebug: false">
+  </script>
+  <script type="text/javascript">
+    var button = document.getElementById('button');
+
+    button.onclick = function() {
+      require(["mojo/signup-forms/Loader"],
+      function(L) {
+        L.start({
+            "baseUrl":"mc.us11.list-manage.com",
+            "uuid":"13cf9edc701d9fb607e73409b","lid":"01d7745445"
+        })
+      });
+  }
+  </script>
 </body>
 <footer>
 
