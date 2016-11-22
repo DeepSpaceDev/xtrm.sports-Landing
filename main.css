@@ -1,13 +1,14 @@
 html, body {
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    width: 100vw;
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
 }
 body {
   /* Flex layout (important for align-items) */
@@ -19,25 +20,34 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  /*background-size: cover;
-  background-origin: center center fixed;
-  background-repeat: no-repeat;
-  margin: auto;
-  padding: auto;*/
+  z-index: 0;
 
   /* center everything */
   align-items: center;
   text-align: center;
 }
+footer {
+  position: absolute;
+  background-color: rgba(255,255,255,0.6);
+  padding: 1.5rem;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
 /* All Fonts */
-#normal-text {
+.normal-text {
   font: 20px Roboto;
   font-weight: 700;
   color: white;
-
 }
 
-#site-title {
+.footer-text {
+  font-family: "Open Sans";
+  font-size: 0.75rem;
+}
+
+.site-title {
   align-items: center;
   text-align: center;
 
@@ -48,15 +58,15 @@ body {
   letter-spacing: 0.14em;
   line-height: 1.5em;
   text-transform: lowercase;
+
   color: rgba(255,15,3,1);
 
   /*background-color: rgba(255, 255, 255, 0.6);*/
   position: relative;
-
 }
 
-#headline {
-  margin-top: 350px;
+.welcome-headline {
+  margin-top: 300px;
 }
 
 h1 {
@@ -65,12 +75,17 @@ h1 {
   color: white;
   font-style: italic,oblique;
   font-size: 90px;
-  /*background-color: rgba(255, 255, 255, 0.6);*/
+}
+
+/* link style */
+a {
+  color: red;
+  text-decoration: none;
 }
 
 /* everything else */
-#button {
-  border: 2px;
+.button {
+  border: 5px;
   border-color: white;
   color: white;
   background-color: rgba(255, 255, 255, 0);
@@ -85,7 +100,8 @@ h1 {
   transition-duration: 0.4s;
 
 }
-#button:hover{
+
+.button:hover{
   background-color rgba(255, 15, 1, 1)
   color: white;
 }
