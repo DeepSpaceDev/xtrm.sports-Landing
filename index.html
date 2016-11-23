@@ -30,10 +30,10 @@
 
     <div>
       <p class="normal-text">Get the greatest freerides and best climbing spots right here!</p>
-      <button type="button" class="button">Get notified!</button>
+      <button id="notifyButton" type="button" class="button">Get notified!</button>
     </div>
   </div>
-  
+
     <footer>
     <!-- <iframe src="footer.html" height="100%" width="100%"></iframe> -->
     <div class="footer-text">
@@ -46,7 +46,7 @@
     data-dojo-config="usePlainJson: true, isDebug: false">
   </script>
   <script type="text/javascript">
-    var button = document.getElementById('button');
+    var button = document.getElementById('notifyButton');
 
     button.onclick = function() {
       require(["mojo/signup-forms/Loader"],
