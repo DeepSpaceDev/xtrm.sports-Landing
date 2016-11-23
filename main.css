@@ -29,7 +29,9 @@ body {
 }
 
 .main-body {
-  position: relative;
+  position: fixed;
+  right: auto;
+  top: 30%;
 }
 
 footer {
@@ -41,9 +43,7 @@ footer {
   bottom: 0;
 }
 
-
 /* All Fonts */
-
 .normal-text {
   font: 1.25rem Roboto;
   font-weight: 700;
@@ -80,7 +80,6 @@ h1 {
 
 
 /* link style */
-
 a {
   color: red;
   text-decoration: none;
@@ -88,9 +87,8 @@ a {
 
 
 /* everything else */
-
-.button {
-  border: solid 0.25rem;
+.button1 {
+  border: solid 0.2rem;
   border-color: white;
   border-radius: 5px;
   color: white;
@@ -101,13 +99,22 @@ a {
   display: inline-block;
   font-size: 1rem;
   font: 'Roboto';
-  /*   -webkit-transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s;
   -o-transition-duration: 0.4s;
   -moz-transition-duration: 0.4s;
-  transition-duration: 0.4s; */
+  transition-duration: 0.4s;
 }
 
-.button:hover {
+.button2 {
+  border: solid 0.175rem;
+  border-radius: 2px;
+  border-color: white;
+  padding: .5rem 1rem;
+  margin: 5px;
+  background-color: rgba(255, 255, 255, 0);
+  color: white;
+}
+.button1:hover {
   color: #ff0f03;
   border-color: #ff0f03;
 }

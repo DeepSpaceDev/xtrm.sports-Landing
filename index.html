@@ -1,7 +1,5 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
@@ -30,14 +28,16 @@
 
     <div>
       <p class="normal-text">Get the greatest freerides and best climbing spots right here!</p>
-      <button id="notifyButton" type="button" class="button">Get notified!</button>
+
+      <button id="notifyButton" type="button" class="button1">Get notified!</button>
     </div>
   </div>
 
-    <footer>
+  <footer>
     <!-- <iframe src="footer.html" height="100%" width="100%"></iframe> -->
     <div class="footer-text">
-      This is my <a href="impressum.html">Impressum</a>
+      <a class="button2" href="https://blog.xtrm-sports.com" target="_blank">Blog</a>
+      <a class="button2" href="impressum.html">Impressum</a>
     </div>
   </footer>
 
@@ -48,7 +48,7 @@
   <script type="text/javascript">
     var button = document.getElementById('notifyButton');
 
-    button.onclick = function() {
+    button1.onclick = function() {
       require(["mojo/signup-forms/Loader"],
       function(L) {
         L.start({
