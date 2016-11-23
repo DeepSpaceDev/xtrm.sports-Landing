@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   height: 100vh;
@@ -10,6 +11,7 @@ html, body {
   right: 0;
   z-index: 1;
 }
+
 body {
   /* Flex layout (important for align-items) */
   display: flex;
@@ -21,23 +23,29 @@ body {
   -o-background-size: cover;
   background-size: cover;
   z-index: 0;
-
   /* center everything */
   align-items: center;
   text-align: center;
 }
+
+.main-body {
+  position: relative;
+}
+
 footer {
   position: absolute;
-  background-color: rgba(255,255,255,0.6);
+  background-color: rgba(255, 255, 255, 0.6);
   padding: 1.5rem;
   right: 0;
   left: 0;
   bottom: 0;
 }
 
+
 /* All Fonts */
+
 .normal-text {
-  font: 20px Roboto;
+  font: 1.25rem Roboto;
   font-weight: 700;
   color: white;
 }
@@ -50,58 +58,58 @@ footer {
 .site-title {
   align-items: center;
   text-align: center;
-
   font-family: 'Monoton';
-  font-size: 60px;
+  font-size: 3.75rem;
   font-weight: 400;
   font-style: normal;
   letter-spacing: 0.14em;
   line-height: 1.5em;
   text-transform: lowercase;
-
-  color: rgba(255,15,3,1);
-
+  color: rgba(255, 15, 3, 1);
   /*background-color: rgba(255, 255, 255, 0.6);*/
   position: relative;
-}
-
-.welcome-headline {
-  margin-top: 300px;
 }
 
 h1 {
   font-family: 'Roboto';
   font-weight: 700;
   color: white;
-  font-style: italic,oblique;
-  font-size: 90px;
+  font-style: italic, oblique;
+  font-size: 5rem;
 }
 
+
 /* link style */
+
 a {
   color: red;
   text-decoration: none;
 }
 
+
 /* everything else */
+
 .button {
-  border: 5px;
+  border: solid 0.25rem;
   border-color: white;
+  border-radius: 5px;
   color: white;
-  background-color: rgba(255, 255, 255, 0);
-  padding: 15px 32px;
+  background-color: rgba(255, 15, 1, 0);
+  padding: 1rem 2rem;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 1rem;
   font: 'Roboto';
-
-  -webkit-transition-duration: 0.4s;
-  transition-duration: 0.4s;
-
+  /*   -webkit-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  -moz-transition-duration: 0.4s;
+  transition-duration: 0.4s; */
 }
 
-.button:hover{
-  background-color rgba(255, 15, 1, 1)
-  color: white;
+.button:hover {
+  background-color rgba(255,
+  15,
+  1,
+  1) color: white;
 }
