@@ -1,4 +1,5 @@
  @import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i|Monoton|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
+
 html,
 body {
   margin: 0;
@@ -36,11 +37,26 @@ body {
     ),
     url('images/background.jpg');
 }
-
+/* content */
 .main-body {
-  position: fixed;
+  position: relative;
   right: auto;
   top: 30%;
+}
+.main-content{
+  background: rgba(255, 255, 255, 0.6);
+  max-width: 600px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 3.5rem;
+  overflow: auto;
+
+}
+.main-content p {
+  text-align: justify;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
 }
 
 footer {
@@ -81,10 +97,18 @@ footer {
 
 h1 {
   font-family: 'Roboto';
-  font-weight: 700;
+  font-weight: 100;
   color: white;
   font-style: italic, oblique;
   font-size: 5rem;
+}
+h2 {
+  font-family: 'Roboto';
+  font-weight: 200;
+}
+h3 {
+  font-family: 'Roboto';
+  font-weight: 300;
 }
 
 
