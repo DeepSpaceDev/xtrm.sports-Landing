@@ -17,7 +17,7 @@ body {
   display: flex;
   flex-direction: column;
   /* background */
-  background: url('images/background.jpg') no-repeat center center fixed;
+  background: no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -26,6 +26,14 @@ body {
   /* center everything */
   align-items: center;
   text-align: center;
+}
+.background{
+  background-image:
+    linear-gradient(
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url('images/background.jpg');
 }
 
 .main-body {
