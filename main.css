@@ -39,7 +39,7 @@ body {
 }
 /* content */
 .main-body {
-  position: relative;
+  position: center center center;
   right: auto;
   top: 30%;
 }
@@ -49,9 +49,8 @@ body {
   padding-left: 30px;
   padding-right: 30px;
   padding-bottom: 30px;
-  margin-bottom: 3.5rem;
+  margin-bottom: 4.5rem;
   overflow: auto;
-
 }
 .main-content p {
   text-align: justify;
